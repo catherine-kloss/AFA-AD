@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lockheed Martin - Nuclear Deterrence Summit</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Small inline style so the page works even if style.css is missing */
+        .cta { padding: .6rem 1.2rem; font-size: 1rem; cursor: pointer; }
+    </style>
+</head>
+<script src="settings.json"></script>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Lockheed Martin - Shaping Our Future</h1>
+        </div>
+        <div class="content">
+            <img src="https://thedebrief.b-cdn.net/wp-content/uploads/2025/02/Trident-II-1536x1083.jpg" alt="Lockheed Martin Logo" class="logo">
+            <p>As the industry‑leading innovator in defense and aerospace, Lockheed Martin is dedicated to protecting our nation’s security, safeguarding critical interests, and delivering reliable, next‑generation solutions. With a century‑long tradition of defense excellence, we deliver state‑of-the‑art technologies that protect America and ensure global stability. Trusted worldwide, we partner closely with the Department of Defense and allied nations, to keep our nation secure and ahead of tomorrow’s threats.</p>
+            <ul>
+                <li>Advanced Technology</li>
+                <li>Cybersecurity</li>
+                <li>Global Partnerships</li>
+            </ul>
+
+            <!-- --------------------------------------------------- -->
+            <!--  BUTTON THAT WILL ALWAYS LAUNCH MICROSOFT EDGE      -->
+            <!-- --------------------------------------------------- -->
+            <button class= "cta italic" onclick="openInEdge()">We Never Forget Who We Are Working For</button>
+
+            <!-- --------------------------------------------------- -->
+        </div>
+    </div>
+
+    <script>
+        /**
+         * Opens the supplied URL in Microsoft Edge using the
+         * `microsoft-edge:` protocol. The function is called from the
+         * button’s onclick handler.
+         */
+        
+button.cta {
+    font-style: italic;   /* makes the label italic */
+}
+
+        
+        
+         function openInEdge() {
+            const targetUrl = 'https://www.exchangemonitor.com/go/nuclear-deterrence-summit-2026/';
+
+            // Build the protocol URL – note the double‑slashes after the colon.
+            const edgeUrl = 'microsoft-edge:' + targetUrl;
+
+            // Most browsers will allow a script‑initiated navigation to a
+            // custom protocol. Using `window.location.href` triggers it.
+            try {
+                window.location.href = edgeUrl;
+            } catch (error) {
+                // OPTIONAL: for browsers that block the navigation, we fall back
+                // to opening the link in a new tab (which will use the system’s
+                // default browser). This ensures the user still reaches the page.
+                window.open(targetUrl, '_blank');
+            }
+        }
+    </script>
+</body>
+</html>
