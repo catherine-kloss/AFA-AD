@@ -1,0 +1,5 @@
+title: "Lockheed Martin – Nuclear Deterrence Summit"
+description: "A static page for the summit"
+theme: minima         # or any supported theme
+baseurl: ""           # leave empty unless you serve from a sub‑folder
+url: "https://catherine-kloss.github.io"
